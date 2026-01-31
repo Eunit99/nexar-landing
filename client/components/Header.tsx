@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "./atoms/Button";
 
 const navLinks = [
   { name: "Products", href: "/products", hasDropdown: true },
@@ -47,15 +48,16 @@ export default function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link to="/signin" className="text-[#101828] font-tt-norms font-medium text-[16px] hover:text-nexar-purple transition-colors">
-              Sign In
-            </Link>
-            <Link
-              to="/signup"
-              className="px-8 py-2.5 bg-nexar-purple text-white font-tt-norms font-medium text-[16px] rounded-[100px] hover:bg-nexar-darkPurple transition-colors shadow-sm"
-            >
-              Sign up
-            </Link>
+            <Button variant="ghost" asChild>
+              <Link to="/signin" className="font-tt-norms font-medium text-[16px]">
+                Sign In
+              </Link>
+            </Button>
+            <Button variant="primary" size="md" asChild>
+              <Link to="/signup">
+                Sign up
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -128,20 +130,22 @@ export default function Header() {
 
               {/* Mobile Actions */}
               <div className="mt-auto px-6 pb-10 pt-6 flex flex-col gap-6 items-center">
-                <Link
-                  to="/signin"
-                  className="text-[#101828] font-tt-norms font-medium text-[16px] hover:text-nexar-purple"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Sign In
-                </Link>
-                <Link
-                  to="/signup"
-                  className="w-full py-4 bg-nexar-purple text-white font-tt-norms font-medium text-[16px] rounded-[100px] text-center hover:bg-nexar-darkPurple transition-colors shadow-sm"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Sign up
-                </Link>
+                <Button variant="ghost" asChild className="w-full">
+                  <Link
+                    to="/signin"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Sign In
+                  </Link>
+                </Button>
+                <Button variant="primary" className="w-full" asChild>
+                  <Link
+                    to="/signup"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Sign up
+                  </Link>
+                </Button>
               </div>
             </motion.div>
           </>

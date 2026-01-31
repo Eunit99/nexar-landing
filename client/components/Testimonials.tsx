@@ -1,3 +1,5 @@
+import { Button } from "./atoms/Button";
+
 export default function Testimonials() {
   return (
     <section className="bg-white py-16 lg:py-24">
@@ -11,9 +13,9 @@ export default function Testimonials() {
               Nexar makes everyone <span className="text-nexar-purple">happy.</span>
             </h2>
           </div>
-          <button className="px-14 py-3.5 border border-nexar-purple text-nexar-purple font-tt-norms font-medium text-lg rounded-full hover:bg-nexar-purple hover:text-white transition-colors">
+          <Button variant="outline" size="lg">
             Register Now
-          </button>
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -49,13 +51,13 @@ interface TestimonialCardProps {
 function TestimonialCard({ image, name, text, featured = false }: TestimonialCardProps) {
   return (
     <div className="relative h-[600px] rounded-2xl overflow-hidden group">
-      <img 
-        src={image} 
+      <img
+        src={image}
         alt={name}
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-      
+
       <div className={`absolute bottom-0 left-0 right-0 p-9 ${featured ? 'bg-nexar-purple' : 'bg-white'} m-9 rounded-lg shadow-lg`}>
         <p className={`font-tt-norms text-base font-bold ${featured ? 'text-white' : 'text-nexar-purple'} mb-2`}>
           -{name}

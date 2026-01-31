@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "./atoms/Button";
 
 export default function CTA() {
   return (
@@ -16,17 +17,21 @@ export default function CTA() {
               At Nexar, we are dedicated to providing cutting-edge digital solutions that empower individuals and businesses to thrive in the online world.
             </p>
           </div>
-          <Link 
-            to="/signup" 
-            className="px-14 py-3.5 border border-white text-white font-tt-norms font-medium text-lg rounded-full hover:bg-white hover:text-nexar-purple transition-colors"
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="border-white text-white hover:bg-white hover:text-nexar-purple"
           >
-            Sign up
-          </Link>
+            <Link to="/signup">
+              Sign up
+            </Link>
+          </Button>
         </div>
       </div>
 
       <svg className="absolute right-0 top-0 opacity-20" width="656" height="184" viewBox="0 0 656 184" fill="none">
-        <path d="M37.5013 -50.5038C83.8115 -111.445 213.215 -203.432 360.346 -83.847C544.26 65.6342 708.2 293.596 773.707 12.4355" stroke="black" strokeWidth="75" strokeLinecap="round"/>
+        <path d="M37.5013 -50.5038C83.8115 -111.445 213.215 -203.432 360.346 -83.847C544.26 65.6342 708.2 293.596 773.707 12.4355" stroke="black" strokeWidth="75" strokeLinecap="round" />
       </svg>
     </section>
   );

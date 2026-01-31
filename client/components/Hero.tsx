@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "./atoms/Button";
 
 export default function Hero() {
   return (
@@ -15,31 +16,29 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
-            <Link 
-              to="/register" 
-              className="px-14 py-3.5 bg-nexar-purple text-white font-tt-norms font-medium text-lg rounded-full hover:bg-nexar-darkPurple transition-colors"
-            >
-              Register Now
-            </Link>
-            <Link 
-              to="/signin" 
-              className="px-14 py-3.5 border border-nexar-purple text-nexar-purple font-tt-norms font-medium text-lg rounded-full hover:bg-nexar-purple hover:text-white transition-colors"
-            >
-              Sign In
-            </Link>
+          <div className="flex flex-wrap items-center gap-6">
+            <Button size="lg" asChild>
+              <Link to="/register">
+                Register Now
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/signin">
+                Sign In
+              </Link>
+            </Button>
           </div>
         </div>
 
         <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden xl:block">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/f28b7cb1b8ae64e1f6ee95ff5d34267304e04b79?width=256" 
-            alt="E-SIM Icon" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/f28b7cb1b8ae64e1f6ee95ff5d34267304e04b79?width=256"
+            alt="E-SIM Icon"
             className="w-32 h-32 opacity-20"
           />
         </div>
       </div>
-      
+
       <div className="w-full bg-nexar-purple text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
           <p className="font-questrial text-lg leading-[155%] max-w-xl">

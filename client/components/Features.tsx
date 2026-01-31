@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Button } from "./atoms/Button";
 
 export default function Features() {
   return (
@@ -13,9 +14,9 @@ export default function Features() {
               Everything digital. In <span className="text-nexar-purple">one place</span>
             </h2>
           </div>
-          <button className="px-14 py-3.5 border border-nexar-purple text-nexar-purple font-tt-norms font-medium text-lg rounded-full hover:bg-nexar-purple hover:text-white transition-colors">
+          <Button variant="outline" size="lg">
             Learn More
-          </button>
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -76,13 +77,13 @@ function FeatureCard({ title, description, bgColor, wide = false }: FeatureCardP
               {description}
             </p>
           </div>
-          <button className="flex items-center gap-0.5 pb-1 border-b border-nexar-purple w-fit group">
+          <Button variant="link" className="flex items-center gap-0.5 border-b border-nexar-purple rounded-none px-0 h-auto group bg-transparent">
             <span className="font-tt-norms text-sm font-medium text-nexar-purple">Learn more</span>
             <ArrowUpRight className="w-5 h-5 text-nexar-purple group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </Button>
         </div>
       </div>
-      
+
       <div className={`mt-10 ${wide ? 'h-48' : 'h-48'} rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden`}>
         <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
           Feature Preview
