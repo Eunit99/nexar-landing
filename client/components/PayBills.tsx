@@ -60,7 +60,7 @@ export default function PayBills() {
                   Thank You For Purchasing Nexar eSim
                 </p>
                 <p className="text-[14px] text-gray-100/90 leading-snug">
-                  You have received a payment of <span className="text-white font-bold underline decoration-nexar-purple decoration-2">NGN 25,000</span> from a crypto exchange
+                  You have received a payment of <span className="text-white font-bold decoration-nexar-purple decoration-2">NGN 25,000</span> from a crypto exchange
                 </p>
               </div>
             </div>
