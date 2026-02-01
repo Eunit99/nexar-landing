@@ -11,7 +11,9 @@ export default function Features() {
               Access made simple, wherever you are....
             </p>
             <h2 className="font-poppins text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[109%]">
-              Everything digital. In <span className="text-nexar-purple">one place</span>
+              Everything digital.
+              <br />
+              In <span className="text-nexar-purple">one place</span>
             </h2>
           </div>
           <Button variant="outline" size="lg">
@@ -19,38 +21,11 @@ export default function Features() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          <FeatureCard
-            title="Access Virtual Numbers"
-            description="Create and use international phone numbers easily for private calls, online registrations, and more."
-            bgColor="bg-white"
-            image="virtual-number"
-          />
-          <FeatureCard
-            title="Purchase E-Sim"
-            description="Get a local or international e-SIM in minutes — no paperwork, no stress."
-            bgColor="bg-white"
-            image="esim"
-          />
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <FeatureCard
-            title="Get Virtual and Gift Cards"
-            description="Shop, gift, or make payments securely anywhere in the world."
-            bgColor="bg-white"
-            image="gift-cards"
-          />
-          <div className="lg:col-span-2">
-            <FeatureCard
-              title="Buy and Boost Social Media Accounts"
-              description="Top up your favorite social platforms and grow your online presence effortlessly."
-              bgColor="bg-white"
-              image="social-media"
-              wide
-            />
-          </div>
-        </div>
+
+        {/* Features go here */}
+
+
       </div>
     </section>
   );
