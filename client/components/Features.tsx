@@ -20,7 +20,7 @@ const featureCards = [
     side: "left",
   },
   {
-    title: "Trade Giftcards",
+    title: "Trade Gift Cards",
     text: "The rates were affordable and payment was instant. That's all I needed 🔥",
     user: "Marcus T.",
     flag: "us",

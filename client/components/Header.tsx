@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, X } from "lucide-react";
@@ -23,7 +21,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c79abcb168ec2d175962002c51138cd9dd9418f9?width=217"
+              src="/logo-black.svg"
               alt="Nexar Logo"
               className="h-7 lg:h-8"
             />
@@ -35,12 +33,12 @@ export default function Header() {
               <div key={link.name} className="flex items-center gap-2 cursor-pointer group">
                 <Link
                   to={link.href}
-                  className="text-[#101828] font-tt-norms font-medium text-[16px] group-hover:text-nexar-purple transition-colors"
+                  className="text-[#000000] font-tt-norms font-medium text-[16px] group-hover:text-nexar-purple transition-colors"
                 >
                   {link.name}
                 </Link>
                 {link.hasDropdown && (
-                  <ChevronDown className="w-4 h-4 text-[#101828] group-hover:text-nexar-purple transition-colors" />
+                  <ChevronDown className="w-4 h-4 text-[#000000] group-hover:text-nexar-purple transition-colors" />
                 )}
               </div>
             ))}
