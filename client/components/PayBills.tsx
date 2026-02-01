@@ -21,16 +21,16 @@ export default function PayBills() {
           {/* Content Block */}
           <div className="flex flex-col items-center lg:items-start lg:text-left gap-8 lg:gap-10 max-w-2xl mx-auto lg:mx-0">
             {/* Top Title Tag (right on mobile, Right on desktop) */}
-            <h3 className="lg:hidden font-poppins text-[18px] font-bold text-white mb-4 leading-tight">
+            <h3 className="lg:hidden text-[18px] font-bold text-white mb-4 leading-tight">
               Purchase Virtual Numbers
             </h3>
 
             <div className="flex flex-col gap-6">
-              <h2 className="font-poppins text-[32px] lg:text-[55px] font-extrabold text-white leading-[105%] tracking-tight">
+              <h2 className="text-[32px] lg:text-[55px] font-extrabold text-white leading-[105%] tracking-tight">
                 Virtual numbers for <br />
                 fast, global <span className="text-[#674EF7]">sign-ups</span>
               </h2>
-              <p className="font-tt-norms text-lg lg:text-xl text-gray-200 leading-[155%] max-w-md mx-auto lg:mx-0">
+              <p className="text-lg lg:text-xl text-gray-200 leading-[155%] max-w-md mx-auto lg:mx-0">
                 Verify accounts quickly with numbers from multiple countries
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function PayBills() {
 
           {/* Side Content (Desktop Only) */}
           <div className="hidden lg:flex flex-col justify-between items-end h-[500px] py-10">
-            <h3 className="font-poppins lg:text-[30px] font-extrabold text-white">
+            <h3 className="lg:text-[30px] font-extrabold text-white">
               Purchase Virtual Numbers
             </h3>
 
@@ -59,7 +59,7 @@ export default function PayBills() {
                 <p className="font-poppins text-[16px] font-bold text-white leading-tight">
                   Thank You For Purchasing Nexar eSim
                 </p>
-                <p className="font-tt-norms text-[14px] text-gray-100/90 leading-snug">
+                <p className="text-[14px] text-gray-100/90 leading-snug">
                   You have received a payment of <span className="text-white font-bold underline decoration-nexar-purple decoration-2">NGN 25,000</span> from a crypto exchange
                 </p>
               </div>

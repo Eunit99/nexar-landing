@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { BadgeCheck } from "lucide-react";
 import { Button } from "./atoms/Button";
 
 export default function Hero() {
@@ -22,11 +21,11 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col gap-6 max-w-4xl">
-            <h1 className="font-poppins text-5xl sm:text-6xl lg:text-[72px] font-extrabold text-[#101828] leading-[105%] tracking-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-[72px] font-extrabold text-[#101828] leading-[105%] tracking-tight">
               All-in-one platform for <br className="hidden lg:block" />
               <span className="text-nexar-purple">Virtual Numbers</span>
             </h1>
-            <p className="font-tt-norms text-lg lg:text-[20px] text-[#475467] leading-[155%] max-w-2xl">
+            <p className="text-lg lg:text-[20px] text-[#475467] leading-[155%] max-w-2xl">
               At Nexar, we are dedicated to providing cutting-edge digital solutions that empower individuals and businesses to thrive in the online world.
             </p>
           </div>
@@ -80,7 +79,7 @@ function BenefitItem({ title, description }: { title: string; description: strin
     <div className="flex flex-col gap-6 text-center lg:text-left items-center lg:items-start group">
       <img src="/assets/icons/check.svg" alt="check icon" />
       <div className="flex flex-col gap-2">
-        <h3 className="font-tt-norms text-[18px] font-bold text-white transition-colors">
+        <h3 className="text-[18px] font-bold text-white transition-colors">
           {title}
         </h3>
         <p className="font-tt-norms text-[14px] text-white/80 leading-[150%] max-w-[260px]">

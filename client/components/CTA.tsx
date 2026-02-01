@@ -13,14 +13,14 @@ export default function CTA() {
 
           <div className="flex flex-col gap-6 max-w-2xl text-left">
             <div className="flex flex-col gap-4">
-              <span className="font-tt-norms text-white font-medium text-[16px] lg:text-[18px]">
+              <span className="text-white font-medium text-[16px] lg:text-[18px]">
                 Our goal is to keep you coming back...
               </span>
-              <h2 className="font-poppins text-[48px] lg:text-[72px] font-bold text-white leading-[105%] tracking-tight">
+              <h2 className="text-[48px] lg:text-[72px] font-bold text-white leading-[105%] tracking-tight">
                 Join us at Nexar
               </h2>
             </div>
-            <p className="font-tt-norms text-white/90 text-lg lg:text-[20px] leading-[155%] max-w-xl">
+            <p className="text-white/90 text-lg lg:text-[20px] leading-[155%] max-w-xl">
               At Nexar, we are dedicated to providing cutting-edge digital solutions that empower individuals and businesses to thrive in the online world.
             </p>
           </div>

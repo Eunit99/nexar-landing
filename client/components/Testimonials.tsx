@@ -36,10 +36,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-14 mb-16">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
           <div className="flex flex-col gap-5">
-            <p className="font-tt-norms text-xl font-medium text-black leading-[155%]">
+            <p className="text-xl font-medium text-black leading-[155%]">
               There’s a place for everyone...
             </p>
-            <h2 className="font-poppins text-5xl sm:text-6xl lg:text-[72px] font-extrabold leading-[105%] tracking-tight text-[#101828]">
+            <h2 className="text-5xl sm:text-6xl lg:text-[72px] font-extrabold leading-[105%] tracking-tight text-[#101828]">
               Nexar makes<br />everyone <span className="text-[#674EF7]">happy.</span>
             </h2>
           </div>
@@ -74,11 +74,11 @@ export default function Testimonials() {
                   {/* Content Overlay */}
                   <div className="absolute bottom-12 left-8 right-8 flex flex-col gap-6">
                     <div className="bg-white rounded-xl px-6 py-3 w-fit">
-                      <span className="font-tt-norms text-[#674EF7] font-bold text-sm lg:text-base">
+                      <span className="text-[#674EF7] font-bold text-sm lg:text-base">
                         {item.category}
                       </span>
                     </div>
-                    <p className="font-tt-norms text-white text-lg lg:text-[20px] leading-[155%] font-medium">
+                    <p className="text-white text-lg lg:text-[20px] leading-[155%] font-medium">
                       {item.description}
                     </p>
                   </div>

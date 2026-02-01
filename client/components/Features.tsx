@@ -74,10 +74,10 @@ export default function Features() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16 lg:mb-24">
           <div className="flex flex-col gap-5">
-            <p className="font-tt-norms text-lg lg:text-xl font-medium text-[#101828] leading-[155%]">
+            <p className="text-lg lg:text-xl font-medium text-[#101828] leading-[155%]">
               Access made simple, wherever you are....
             </p>
-            <h2 className="font-poppins text-5xl lg:text-[72px] font-extrabold text-[#101828] leading-[110%] tracking-tight">
+            <h2 className="text-5xl lg:text-[72px] font-extrabold text-[#101828] leading-[110%] tracking-tight">
               Everything digital.
               <br />
               In <span className="text-nexar-purple">one place</span>
@@ -151,17 +151,17 @@ function FeatureCard({ title, text, user, flag, color, isMobile, currentIndex, t
   return (
     <div className={`${color} p-8 lg:p-10 rounded-[32px] flex flex-col gap-6 lg:gap-8 transition-all h-full relative max-w-[335px]`}>
       <div className="flex flex-col gap-4">
-        <h3 className="font-poppins text-lg lg:text-lg font-bold text-[#080325]">
+        <h3 className="text-lg lg:text-lg font-bold text-[#080325]">
           {title}
         </h3>
-        <p className="font-tt-norms text-[#475467] text-sm lg:text-md leading-[160%]">
+        <p className="text-[#475467] text-sm lg:text-md leading-[160%]">
           {text}
         </p>
       </div>
       <div className="mt-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={`/assets/icons/flags/${flag.toLowerCase()}.svg`} alt="flag" />
-          <span className="font-tt-norms font-bold text-[#101828] text-sm lg:text-md">
+          <span className="font-bold text-[#101828] text-sm lg:text-md">
             {user}
           </span>
         </div>

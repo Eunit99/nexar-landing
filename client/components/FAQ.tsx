@@ -27,10 +27,10 @@ export default function FAQ() {
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5 mb-16 text-center">
-          <p className="font-tt-norms text-xl font-medium text-black leading-[155%]">
+          <p className="text-xl font-medium text-black leading-[155%]">
             You have questions? We have answers
           </p>
-          <h2 className="font-poppins text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[103%]">
+          <h2 className="text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[103%]">
             Frequently asked <span className="text-nexar-purple">questions</span>
           </h2>
         </div>
@@ -40,15 +40,15 @@ export default function FAQ() {
             <div
               key={index}
               className={`rounded-[30px] border transition-all ${openIndex === index
-                  ? 'border-[#005CFF] bg-gray-50 p-8'
-                  : 'border-nexar-purple bg-gray-50 p-8 lg:p-11'
+                ? 'border-[#005CFF] bg-gray-50 p-8'
+                : 'border-nexar-purple bg-gray-50 p-8 lg:p-11'
                 }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                 className="w-full flex justify-between items-center gap-4"
               >
-                <h3 className="font-urbanist text-lg font-bold text-[#25272D] text-left">
+                <h3 className="text-lg font-bold text-[#25272D] text-left">
                   {faq.question}
                 </h3>
                 <ChevronDown
@@ -58,7 +58,7 @@ export default function FAQ() {
               </button>
               {openIndex === index && (
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <p className="font-urbanist text-lg font-medium text-[#535860] leading-relaxed">
+                  <p className="text-lg font-medium text-[#535860] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

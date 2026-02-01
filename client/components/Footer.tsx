@@ -10,39 +10,39 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-poppins text-xl font-bold">Quick Links</h3>
+            <h3 className="text-xl font-bold">Quick Links</h3>
             <div className="flex flex-col gap-4">
-              <Link to="/" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Home</Link>
-              <Link to="/signin" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Login</Link>
-              <Link to="/signup" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Create Account</Link>
+              <Link to="/" className="text-[16px] text-white/90 hover:text-white transition-colors">Home</Link>
+              <Link to="/signin" className="text-[16px] text-white/90 hover:text-white transition-colors">Login</Link>
+              <Link to="/signup" className="text-[16px] text-white/90 hover:text-white transition-colors">Create Account</Link>
             </div>
           </div>
 
           {/* Product Links */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-poppins text-xl font-bold">Product Links</h3>
+            <h3 className="text-xl font-bold">Product Links</h3>
             <div className="flex flex-col gap-4">
-              <Link to="/virtual-numbers" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Virtual Numbers</Link>
-              <Link to="/giftcards" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Gifcards</Link>
-              <Link to="/esim" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">ESim</Link>
-              <Link to="/social-media" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Buy & Boost Social Media</Link>
-              <Link to="/pay-bills" className="font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">Pay Bills</Link>
+              <Link to="/virtual-numbers" className="text-[16px] text-white/90 hover:text-white transition-colors">Virtual Numbers</Link>
+              <Link to="/giftcards" className="text-[16px] text-white/90 hover:text-white transition-colors">Gifcards</Link>
+              <Link to="/esim" className="text-[16px] text-white/90 hover:text-white transition-colors">ESim</Link>
+              <Link to="/social-media" className="text-[16px] text-white/90 hover:text-white transition-colors">Buy & Boost Social Media</Link>
+              <Link to="/pay-bills" className="text-[16px] text-white/90 hover:text-white transition-colors">Pay Bills</Link>
             </div>
           </div>
 
           {/* Contact Us */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-poppins text-xl font-bold">Contact Us</h3>
+            <h3 className="text-xl font-bold">Contact Us</h3>
             <div className="flex flex-col gap-6">
-              <a href="mailto:support@shawnsms.com" className="flex items-center gap-3 font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">
+              <a href="mailto:support@shawnsms.com" className="flex items-center gap-3 text-[16px] text-white/90 hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
                 <span>support@shawnsms.com</span>
               </a>
-              <a href="#" className="flex items-center gap-3 font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">
+              <a href="#" className="flex items-center gap-3 text-[16px] text-white/90 hover:text-white transition-colors">
                 <MessageSquare className="w-6 h-6 rotate-[270deg]" />
                 <span>Whatsapp live chat</span>
               </a>
-              <a href="#" className="flex items-center gap-3 font-tt-norms text-[16px] text-white/90 hover:text-white transition-colors">
+              <a href="#" className="flex items-center gap-3 text-[16px] text-white/90 hover:text-white transition-colors">
                 <Send className="w-6 h-6" />
                 <span>Email Support</span>
               </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="font-tt-norms text-[16px] text-white/90 leading-[160%] lg:max-w-xs">
+            <p className="text-[16px] text-white/90 leading-[160%] lg:max-w-xs">
               At Nexar, we are dedicated to providing cutting-edge digital solutions that empower individuals and businesses.
             </p>
 

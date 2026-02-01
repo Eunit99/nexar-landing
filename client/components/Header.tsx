@@ -33,7 +33,7 @@ export default function Header() {
               <div key={link.name} className="flex items-center gap-2 cursor-pointer group">
                 <Link
                   to={link.href}
-                  className="text-[#000000] font-tt-norms font-medium text-[16px] group-hover:text-nexar-purple transition-colors"
+                  className="text-[#000000] font-medium text-[16px] group-hover:text-nexar-purple transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -47,7 +47,7 @@ export default function Header() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-8">
             <Button variant="ghost" asChild>
-              <Link to="/signin" className="font-tt-norms font-medium text-[16px]">
+              <Link to="/signin" className="font-medium text-[16px]">
                 Sign In
               </Link>
             </Button>
@@ -113,7 +113,7 @@ export default function Header() {
                     <div className="flex justify-between items-center group cursor-pointer">
                       <Link
                         to={link.href}
-                        className="text-[#101828] font-tt-norms font-medium text-[16px]"
+                        className="text-[#101828] font-medium text-[16px]"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {link.name}

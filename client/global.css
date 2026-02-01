@@ -1,107 +1,106 @@
-/** @import must precede all other statements */
 /* Poppins */
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Thin.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/poppins/Poppins-Black.ttf') format('truetype');
+  src: url("../assets/fonts/poppins/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
-/* TT Norms Pro (Using the provided Serif Trial files) */
+/* TT Norms Pro */
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial Regular.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial Medium.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial DemiBold.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial DemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial Bold.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial ExtraBold.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms Pro';
-  src: url('/assets/fonts/norms-pro/TT Norms Pro Serif Trial Black.ttf') format('truetype');
+  src: url("../assets/fonts/norms-pro/TT Norms Pro Serif Trial Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -119,60 +118,43 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
-
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
-
     --primary: 252 91% 64%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 252 91% 64%;
-
     --radius: 0.5rem;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 252 91% 64%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 252 91% 64%;
@@ -186,7 +168,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'TT Norms Pro', -apple-system, Roboto, Helvetica, sans-serif;
+    font-family: 'TT Norms Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif !important;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
