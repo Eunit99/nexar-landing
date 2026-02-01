@@ -7,48 +7,48 @@ const featureCards = [
     title: "Buy eSIM",
     text: "I landed in Dubai and activated my eSIM in seconds. No need for airport SIM cards anymore 💃",
     user: "Marcus T.",
-    flag: "🇬🇧",
-    color: "bg-[#EFEEFF]",
+    flag: "gb",
+    color: "bg-[#674EF71A]",
     side: "left",
   },
   {
     title: "Access Virtual Numbers",
     text: "Used their US number for Telegram verification. The process was seamless —",
     user: "Marcus T.",
-    flag: "🇳🇬",
-    color: "bg-[#FFFCEF]",
+    flag: "ng",
+    color: "bg-[#FFCB001A]",
     side: "left",
   },
   {
     title: "Trade Giftcards",
     text: "The rates were affordable and payment was instant. That's all I needed 🔥",
     user: "Marcus T.",
-    flag: "🇺🇸",
-    color: "bg-[#FFF2F2]",
+    flag: "us",
+    color: "bg-[#EA39581A]",
     side: "left",
   },
   {
     title: "Boost and Buy Socials",
-    text: "Bought an Instagram account with 15k followers from Nexar. I'm already getting brand deals �",
+    text: "Bought an Instagram account with 15k followers from Nexar. I'm already getting brand deals ",
     user: "Marcus T.",
-    flag: "🇨🇲",
-    color: "bg-[#FFF1F1]",
+    flag: "cm",
+    color: "bg-[#EA39581A]",
     side: "right",
   },
   {
     title: "Convert Crypto",
     text: "Switching to Nexar was the best decision I made. Everything I need is in one place 💯",
     user: "Marcus T.",
-    flag: "🇨🇦",
-    color: "bg-[#F7F7F7]",
+    flag: "ca",
+    color: "bg-[#F8F8F8]",
     side: "right",
   },
   {
     title: "Make Bill Payment",
     text: "My electricity token delivers instantly every single time. Very reliable ⚡",
     user: "Marcus T.",
-    flag: "🇳🇬",
-    color: "bg-[#F3F1FF]",
+    flag: "ng",
+    color: "bg-[#674EF71A]",
     side: "right",
   },
 ];
@@ -149,21 +149,19 @@ export default function Features() {
 
 function FeatureCard({ title, text, user, flag, color, isMobile, currentIndex, total }: any) {
   return (
-    <div className={`${color} p-8 lg:p-10 rounded-[32px] flex flex-col gap-6 lg:gap-8 transition-all hover:shadow-lg h-full relative`}>
+    <div className={`${color} p-8 lg:p-10 rounded-[32px] flex flex-col gap-6 lg:gap-8 transition-all h-full relative max-w-[335px]`}>
       <div className="flex flex-col gap-4">
-        <h3 className="font-poppins text-xl lg:text-2xl font-bold text-[#101828]">
+        <h3 className="font-poppins text-lg lg:text-lg font-bold text-[#080325]">
           {title}
         </h3>
-        <p className="font-tt-norms text-[#475467] text-lg lg:text-xl leading-[160%]">
+        <p className="font-tt-norms text-[#475467] text-sm lg:text-md leading-[160%]">
           {text}
         </p>
       </div>
       <div className="mt-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center text-2xl bg-white shadow-sm border border-gray-100 overflow-hidden">
-            {flag}
-          </div>
-          <span className="font-tt-norms font-bold text-[#101828] text-lg lg:text-xl">
+          <img src={`/assets/icons/flags/${flag.toLowerCase()}.svg`} alt="flag" />
+          <span className="font-tt-norms font-bold text-[#101828] text-sm lg:text-md">
             {user}
           </span>
         </div>
