@@ -6,6 +6,11 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import ConvertCrypto from "@/components/ConvertCrypto";
+
+
+
+
 
 export default function Index() {
   return (
@@ -15,6 +20,7 @@ export default function Index() {
         <Hero />
         <Features />
         <PayBills />
+        <ConvertCrypto />
         <Testimonials />
         <FAQ />
         <CTA />
