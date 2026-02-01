@@ -54,11 +54,10 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-2">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c79abcb168ec2d175962002c51138cd9dd9418f9?width=100"
+                src="/logo.svg"
                 alt="Nexar Logo"
-                className="w-10 h-10 brightness-0 invert"
+                className="h-10 brightness-0 invert"
               />
-              <span className="font-poppins text-[32px] font-bold tracking-tight">Nexar</span>
             </div>
 
             <p className="font-tt-norms text-[16px] text-white/90 leading-[160%] lg:max-w-xs">

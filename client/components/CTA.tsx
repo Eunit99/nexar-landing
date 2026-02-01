@@ -3,7 +3,7 @@ import { Button } from "./atoms/Button";
 
 export default function CTA() {
   return (
-    <section className="bg-nexar-purple relative overflow-hidden py-20 lg:py-28">
+    <section className="bg-nexar-purple relative overflow-hidden py-20 lg:py-28 border-b-[30px] border-[#533FC8]">
       {/* Decorative Bubbles/Curves as seen in the mockup */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-white opacity-10 rounded-full blur-3xl pointer-events-none" />
