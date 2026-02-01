@@ -40,52 +40,52 @@ export default function ConvertCrypto() {
 
           <div className="flex flex-col gap-10 lg:gap-12 max-w-5xl mx-auto">
             {/* Conversion Inputs */}
-            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-4 xl:gap-8">
 
               {/* YOU SEND */}
-              <div className="flex-1 w-full flex flex-col gap-3">
+              <div className="flex-1 w-full flex flex-col gap-3 min-w-0">
                 <span className="font-tt-norms text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
                   YOU SEND
                 </span>
-                <div className="relative flex items-center bg-white border border-[#D0D5DD] rounded-2xl p-4 lg:p-6 shadow-sm focus-within:border-nexar-purple transition-all h-[80px] lg:h-[100px]">
+                <div className="relative flex items-center bg-white border border-[#D0D5DD] rounded-2xl px-4 lg:px-6 shadow-sm focus-within:border-nexar-purple transition-all h-[80px] lg:h-[100px] overflow-hidden">
                   <input
                     type="text"
                     defaultValue="200"
-                    className="flex-1 bg-transparent border-none outline-none font-tt-norms text-2xl lg:text-3xl font-bold text-[#101828]"
+                    className="w-full bg-transparent border-none outline-none font-tt-norms text-xl lg:text-2xl xl:text-3xl font-bold text-[#101828] min-w-0"
                   />
-                  <div className="flex items-center gap-2 bg-[#F9F5FF] px-4 py-2 lg:py-3 rounded-xl border border-[#F4EBFF] cursor-pointer hover:bg-[#F4EBFF] transition-colors">
-                    <div className="w-6 h-6 lg:w-8 lg:h-8 bg-[#F3A019] rounded-full flex items-center justify-center text-white font-bold text-xs">
+                  <div className="flex-shrink-0 flex items-center gap-2 bg-[#F9F5FF] px-3 py-1.5 lg:px-4 lg:py-2 rounded-xl border border-[#F4EBFF] cursor-pointer hover:bg-[#F4EBFF] transition-colors whitespace-nowrap">
+                    <div className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 bg-[#F3A019] rounded-full flex items-center justify-center text-white font-bold text-xs">
                       ₿
                     </div>
-                    <span className="font-tt-norms text-lg lg:text-xl font-bold text-[#344054]">BTC</span>
+                    <span className="font-tt-norms text-base lg:text-xl font-bold text-[#344054]">BTC</span>
                     <ChevronDown className="w-5 h-5 text-[#667085]" />
                   </div>
                 </div>
               </div>
 
               {/* Arrow Icon */}
-              <div className="flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full border border-[#D0D5DD] flex items-center justify-center bg-white shadow-sm">
-                  <ArrowRight className="hidden lg:block w-6 h-6 text-[#101828]" />
-                  <ArrowDown className="lg:hidden w-6 h-6 text-[#101828]" />
+              <div className="flex-shrink-0 flex items-center justify-center mt-2 lg:mt-6">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[#D0D5DD] flex items-center justify-center bg-white shadow-sm">
+                  <ArrowRight className="hidden lg:block w-5 h-5 lg:w-6 lg:h-6 text-[#101828]" />
+                  <ArrowDown className="lg:hidden w-5 h-5 text-[#101828]" />
                 </div>
               </div>
 
               {/* YOU RECEIVE */}
-              <div className="flex-1 w-full flex flex-col gap-3">
+              <div className="flex-1 w-full flex flex-col gap-3 min-w-0">
                 <span className="font-tt-norms text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
                   YOU RECEIVE
                 </span>
-                <div className="relative flex items-center bg-white border border-[#D0D5DD] rounded-2xl p-4 lg:p-6 shadow-sm focus-within:border-nexar-purple transition-all h-[80px] lg:h-[100px]">
+                <div className="relative flex items-center bg-[#F9F5FF] border border-[#674EF7] rounded-2xl px-4 lg:px-6 shadow-sm h-[80px] lg:h-[100px] overflow-hidden">
                   <input
                     type="text"
                     defaultValue="26,000,000,000 NGN"
                     readOnly
-                    className="flex-1 bg-transparent border-none outline-none font-tt-norms text-2xl lg:text-3xl font-bold text-[#101828]"
+                    className="w-full bg-transparent border-none outline-none font-tt-norms text-lg lg:text-xl xl:text-2xl font-bold text-[#101828] min-w-0"
                   />
-                  <div className="flex items-center gap-2 bg-[#F9F5FF] px-4 py-2 lg:py-3 rounded-xl border border-[#F4EBFF] cursor-pointer hover:bg-[#F4EBFF] transition-colors">
-                    <img src="/assets/icons/flags/ng.svg" alt="NGN" className="w-6 h-6 lg:w-8 lg:h-8 rounded-full object-cover" />
-                    <span className="font-tt-norms text-lg lg:text-xl font-bold text-[#344054]">NGN</span>
+                  <div className="flex-shrink-0 flex items-center gap-2 bg-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-xl border border-[#D0D5DD] cursor-pointer hover:bg-gray-50 transition-colors whitespace-nowrap">
+                    <img src="/assets/icons/flags/ng.svg" alt="NGN" className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 rounded-full object-cover" />
+                    <span className="font-tt-norms text-base lg:text-xl font-bold text-[#344054]">NGN</span>
                   </div>
                 </div>
               </div>
