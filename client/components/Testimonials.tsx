@@ -1,71 +1,93 @@
 import { Button } from "./atoms/Button";
+import useEmblaCarousel from "embla-carousel-react";
+
+const testimonials = [
+  {
+    image: "/assets/images/testimonials/freelancers.svg",
+    category: "Freelancers & Content Creators",
+    description: "Grow your accounts with real engagement, buy ready-made accounts to start strong, and pay for tools, subscriptions, and services effortlessly.",
+  },
+  {
+    image: "/assets/images/testimonials/travellers.svg",
+    category: "Travellers",
+    description: "Activate global eSIMs instantly, access virtual numbers for verifications, and enjoy seamless connectivity across countries.",
+  },
+  {
+    image: "/assets/images/testimonials/online-shoppers.svg",
+    category: "Online Shoppers",
+    description: "Buy gift cards for shopping, streaming, and subscriptions, verify accounts with virtual numbers, and pay securely in one place.",
+  },
+  {
+    image: "/assets/images/testimonials/professional.svg",
+    category: "Traders & Investors",
+    description: "Swap crypto to local currency, pay bills, top up eSIMs, and manage transactions securely on Nexar.",
+  }
+];
 
 export default function Testimonials() {
+  const [emblaRef] = useEmblaCarousel({
+    align: "start",
+    loop: false,
+    dragFree: true,
+  });
+
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-16">
+    <section className="bg-white py-16 lg:py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-14 mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
           <div className="flex flex-col gap-5">
             <p className="font-tt-norms text-xl font-medium text-black leading-[155%]">
-              Our goal is simple — to keep you smiling. ...
+              There’s a place for everyone...
             </p>
-            <h2 className="font-poppins text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[103%]">
-              Nexar makes everyone <span className="text-nexar-purple">happy.</span>
+            <h2 className="font-poppins text-5xl sm:text-6xl lg:text-[72px] font-extrabold leading-[105%] tracking-tight text-[#101828]">
+              Nexar makes<br />everyone <span className="text-[#674EF7]">happy.</span>
             </h2>
           </div>
-          <Button variant="outline" size="lg">
+          <Button
+            variant="outline"
+            size="lg"
+            className="rounded-full px-10 h-14 border-[#674EF7] text-[#674EF7] hover:bg-[#674EF7] hover:text-white transition-all font-bold"
+          >
             Register Now
           </Button>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <TestimonialCard
-            image="https://api.builder.io/api/v1/image/assets/TEMP/c3e2d73e9c9f5f9708b100ce652e52b0030bbae9?width=876"
-            name="Bill Giftcards"
-            text="I can finally manage all my digital payments in one place. Nexar saves me time.❤️"
-          />
-          <TestimonialCard
-            image="https://api.builder.io/api/v1/image/assets/TEMP/81284334e03b7ec2e151296bd5e5ca85345702a0?width=876"
-            name="Bill Payment"
-            text="Super easy to use and really fast. I switched to Nexar and never looked back..❤️💜💜💜"
-            featured
-          />
-          <TestimonialCard
-            image="https://api.builder.io/api/v1/image/assets/TEMP/d5f03962f6cd04334d2cf640b1b665511cb2ffcf?width=876"
-            name="Buy Virtual Cards"
-            text="Super easy to use and really fast. I switched to Nexar and never looked back..❤️"
-          />
+      {/* Full Width Carousel Container */}
+      <div className="w-full">
+        <div className="embla" ref={emblaRef}>
+          <div className="embla__container flex">
+            {testimonials.map((item, index) => (
+              <div
+                key={index}
+                className="embla__slide flex-[0_0_85%] sm:flex-[0_0_50%] lg:flex-[0_0_33%] xl:flex-[0_0_25%] min-w-0 pl-0 first:pl-0"
+              >
+                <div className="relative h-[650px] lg:h-[750px] overflow-hidden group">
+                  <img
+                    src={item.image}
+                    alt={item.category}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                  {/* Content Overlay */}
+                  <div className="absolute bottom-12 left-8 right-8 flex flex-col gap-6">
+                    <div className="bg-white rounded-xl px-6 py-3 w-fit">
+                      <span className="font-tt-norms text-[#674EF7] font-bold text-sm lg:text-base">
+                        {item.category}
+                      </span>
+                    </div>
+                    <p className="font-tt-norms text-white text-lg lg:text-[20px] leading-[155%] font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
-  );
-}
-
-interface TestimonialCardProps {
-  image: string;
-  name: string;
-  text: string;
-  featured?: boolean;
-}
-
-function TestimonialCard({ image, name, text, featured = false }: TestimonialCardProps) {
-  return (
-    <div className="relative h-[600px] rounded-2xl overflow-hidden group">
-      <img
-        src={image}
-        alt={name}
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-      <div className={`absolute bottom-0 left-0 right-0 p-9 ${featured ? 'bg-nexar-purple' : 'bg-white'} m-9 rounded-lg shadow-lg`}>
-        <p className={`font-tt-norms text-base font-bold ${featured ? 'text-white' : 'text-nexar-purple'} mb-2`}>
-          -{name}
-        </p>
-        <p className={`font-tt-norms text-base font-bold ${featured ? 'text-white' : 'text-black'} leading-[155%]`}>
-          {text}
-        </p>
-      </div>
-    </div>
   );
 }
