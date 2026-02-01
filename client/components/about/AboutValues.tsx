@@ -53,7 +53,7 @@ export default function AboutValues() {
             />
           </svg>
 
-          <p className="relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[990px] px-8 lg:px-20">
+          <p className="font-tt-norms relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[990px] px-8 lg:px-20">
             Neaxr has helped over 100,000 users across Nigeria stay connected, make payments, and manage their digital lives effortlessly through one secure platform.
           </p>
         </div>
@@ -63,16 +63,16 @@ export default function AboutValues() {
       <div className="max-w-6xl mx-auto px-6 lg:px-14">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-14">
           <div>
-            <p className="text-black text-[20.709px] font-medium leading-[155%] mb-5">
+            <p className="font-tt-norms text-black text-[20.709px] font-medium leading-[155%] mb-5">
               Our goals are clear and objective...
             </p>
-            <h2 className="text-[40px] lg:text-[55.47px] font-extrabold leading-[109%]">
+            <h2 className="font-poppins text-[40px] lg:text-[55.47px] font-extrabold leading-[109%]">
               <span className="text-black">What defines </span>
               <span className="text-nexar-purple">Nexar</span>
             </h2>
           </div>
 
-          <button className="px-14 py-3.5 border border-nexar-purple rounded-full text-nexar-purple font-medium text-lg leading-[155%] hover:bg-nexar-purple hover:text-white transition-colors">
+          <button className="font-tt-norms px-14 py-3.5 border border-nexar-purple rounded-full text-nexar-purple font-medium text-lg leading-[155%] hover:bg-nexar-purple hover:text-white transition-colors">
             Learn More
           </button>
         </div>
@@ -116,10 +116,10 @@ function ValueCard({ title, description, image }: ValueCardProps) {
       </div>
 
       <div className="flex flex-col gap-3">
-        <h3 className="text-[#080325] text-lg font-semibold leading-[100%]">
+        <h3 className="font-poppins text-[#080325] text-lg font-semibold leading-[100%]">
           {title}
         </h3>
-        <p className="text-black/80 text-base leading-[155%]">
+        <p className="font-tt-norms text-black/80 text-base leading-[155%]">
           {description}
         </p>
       </div>

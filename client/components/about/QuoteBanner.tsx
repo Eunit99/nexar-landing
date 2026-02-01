@@ -24,7 +24,7 @@ export default function QuoteBanner({ text, variant = 'purple' }: QuoteBannerPro
             />
           </svg>
 
-          <p className="relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[990px] px-8 lg:px-16">
+          <p className="font-tt-norms relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[990px] px-8 lg:px-16">
             {text}
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function QuoteBanner({ text, variant = 'purple' }: QuoteBannerPro
         />
       </svg>
 
-      <p className="relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[1161px] px-8 lg:px-16">
+      <p className="font-tt-norms relative z-10 text-white text-2xl lg:text-[28px] font-normal leading-[146%] text-left max-w-[1161px] px-8 lg:px-16">
         {text}
       </p>
     </section>

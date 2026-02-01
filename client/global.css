@@ -105,6 +105,14 @@
   font-style: normal;
 }
 
+.font-tt-norms {
+  font-family: 'TT Norms Pro';
+}
+
+.font-poppins {
+  font-family: 'Poppins';
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

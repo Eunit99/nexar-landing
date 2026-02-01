@@ -4,17 +4,17 @@ export default function AboutHero() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-14 pb-0">
         <div className="flex flex-col items-start gap-5 max-w-5xl">
           <div className="inline-flex px-7 py-1.5 justify-center items-center rounded-full bg-nexar-purple/36">
-            <span className="text-nexar-purple font-medium text-base leading-[155%]">
+            <span className="font-tt-norms text-nexar-purple font-medium text-base leading-[155%]">
               About Us
             </span>
           </div>
 
-          <h1 className="font-bold text-[44px] md:text-[56px] lg:text-[69.622px] leading-[115%] tracking-[-1.392px]">
-            <span className="text-black">Building a smarter digital future </span>
-            <span className="text-nexar-purple">for everyone</span>
+          <h1 className="font-poppins font-bold text-[44px] md:text-[56px] lg:text-[69.622px] leading-[115%] tracking-[-1.392px]">
+            <span className="font-poppins text-black">Building a smarter digital future </span>
+            <span className="font-poppins text-nexar-purple">for everyone</span>
           </h1>
 
-          <p className="text-black text-lg leading-[155%] max-w-3xl mt-5">
+          <p className="font-tt-norms text-black text-lg leading-[155%] max-w-3xl mt-5">
             At Nexar, we're on a mission to make digital access effortless for everyone — helping people and businesses do more, stay connected, and reach new opportunities.
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function AboutHero() {
           <div className="flex gap-0 min-w-max">
             {/* Card 1 */}
             <div className="relative min-w-[292px] h-[439px] bg-nexar-purple overflow-hidden">
-              <p className="absolute left-7 top-16 w-[124px] text-[#F2F2F2] font-poppins text-[21.135px] font-light leading-[105%]">
+              <p className="font-tt-norms absolute left-7 top-16 w-[124px] text-[#F2F2F2] text-[21.135px] font-light leading-[105%]">
                 Give your money a run for its money
               </p>
               <img
@@ -42,7 +42,7 @@ export default function AboutHero() {
 
             {/* Card 2 */}
             <div className="relative min-w-[292px] h-[439px] bg-nexar-purple overflow-hidden">
-              <p className="absolute left-7 top-16 w-[124px] text-[#F2F2F2] font-poppins text-[21.135px] font-light leading-[105%]">
+              <p className="font-tt-norms absolute left-7 top-16 w-[124px] text-[#F2F2F2] text-[21.135px] font-light leading-[105%]">
                 Give your money a run for its money
               </p>
               <img
@@ -60,7 +60,7 @@ export default function AboutHero() {
 
             {/* Card 3 */}
             <div className="relative min-w-[292px] h-[439px] bg-[#F14EF7] overflow-hidden">
-              <p className="absolute left-7 top-16 w-[124px] text-[#F2F2F2] font-poppins text-[21.135px] font-light leading-[105%]">
+              <p className="font-tt-norms absolute left-7 top-16 w-[124px] text-[#F2F2F2] text-[21.135px] font-light leading-[105%]">
                 Give your money a run for its money
               </p>
               <img
@@ -78,7 +78,7 @@ export default function AboutHero() {
 
             {/* Card 4 */}
             <div className="relative min-w-[292px] h-[439px] bg-nexar-purple overflow-hidden">
-              <p className="absolute left-7 top-16 w-[124px] text-[#F2F2F2] font-poppins text-[21.135px] font-light leading-[105%]">
+              <p className="font-tt-norms absolute left-7 top-16 w-[124px] text-[#F2F2F2] text-[21.135px] font-light leading-[105%]">
                 Give your money a run for its money
               </p>
               <img
@@ -96,7 +96,7 @@ export default function AboutHero() {
 
             {/* Card 5 */}
             <div className="relative min-w-[292px] h-[439px] bg-nexar-purple overflow-hidden">
-              <p className="absolute left-7 top-16 w-[124px] text-[#F2F2F2] font-poppins text-[21.135px] font-light leading-[105%]">
+              <p className="font-tt-norms absolute left-7 top-16 w-[124px] text-[#F2F2F2] text-[21.135px] font-light leading-[105%]">
                 Give your money a run for its money
               </p>
               <img

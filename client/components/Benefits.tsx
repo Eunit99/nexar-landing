@@ -42,10 +42,10 @@ function BenefitCard({ title, description }: BenefitCardProps) {
         <CheckCircle className="w-4 h-4 text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       </div>
       <div className="flex flex-col gap-2">
-        <h3 className="text-base font-bold text-white leading-[155%]">
+        <h3 className="font-poppins text-base font-bold text-white leading-[155%]">
           {title}
         </h3>
-        <p className="text-sm text-white leading-[155%]">
+        <p className="font-tt-norms text-sm text-white leading-[155%]">
           {description}
         </p>
       </div>

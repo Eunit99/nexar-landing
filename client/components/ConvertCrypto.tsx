@@ -29,10 +29,10 @@ export default function ConvertCrypto() {
             </svg>
           </div>
 
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-[#101828]">
+          <h2 className="font-poppins text-3xl lg:text-5xl font-extrabold text-[#101828]">
             Convert Crypto to Naira
           </h2>
-          <p className="text-base lg:text-lg text-[#475467] leading-[160%]">
+          <p className="font-tt-norms text-base lg:text-lg text-[#475467] leading-[160%]">
             Nexar provides mid-market rates, updated in real time. We ensure there are no hidden fees, offering transparent and reliable currency conversion for users worldwide.
           </p>
 
@@ -42,20 +42,20 @@ export default function ConvertCrypto() {
 
               {/* YOU SEND */}
               <div className="flex-1 w-full flex flex-col gap-3 min-w-0">
-                <span className="text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
+                <span className="font-tt-norms text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
                   YOU SEND
                 </span>
                 <div className="relative flex items-center bg-white border border-[#D0D5DD] rounded-2xl px-4 lg:px-6 shadow-sm focus-within:border-nexar-purple transition-all h-[80px] lg:h-[100px] overflow-hidden">
                   <input
                     type="text"
                     defaultValue="200"
-                    className="w-full bg-transparent border-none outline-none text-xl lg:text-2xl xl:text-3xl font-bold text-[#101828] min-w-0"
+                    className="font-tt-norms w-full bg-transparent border-none outline-none text-xl lg:text-2xl xl:text-3xl font-bold text-[#101828] min-w-0"
                   />
                   <div className="flex-shrink-0 flex items-center gap-2 bg-[#F9F5FF] px-3 py-1.5 lg:px-4 lg:py-2 rounded-xl border border-[#F4EBFF] cursor-pointer hover:bg-[#F4EBFF] transition-colors whitespace-nowrap">
-                    <div className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 bg-[#F3A019] rounded-full flex items-center justify-center text-white font-bold text-xs">
+                    <div className="font-poppins flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 bg-[#F3A019] rounded-full flex items-center justify-center text-white font-bold text-xs">
                       ₿
                     </div>
-                    <span className="text-base lg:text-xl font-bold text-[#344054]">BTC</span>
+                    <span className="font-tt-norms text-base lg:text-xl font-bold text-[#344054]">BTC</span>
                     <ChevronDown className="w-5 h-5 text-[#667085]" />
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function ConvertCrypto() {
 
               {/* YOU RECEIVE */}
               <div className="flex-1 w-full flex flex-col gap-3 min-w-0">
-                <span className="text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
+                <span className="font-tt-norms text-xs font-bold text-[#98A2B3] uppercase tracking-wider pl-6">
                   YOU RECEIVE
                 </span>
                 <div className="relative flex items-center bg-[#F9F5FF] border border-[#674EF7] rounded-2xl px-4 lg:px-6 shadow-sm h-[80px] lg:h-[100px] overflow-hidden">
@@ -79,11 +79,11 @@ export default function ConvertCrypto() {
                     type="text"
                     defaultValue="26,000,000,000 NGN"
                     readOnly
-                    className="w-full bg-transparent border-none outline-none text-lg lg:text-xl xl:text-2xl font-bold text-[#101828] min-w-0"
+                    className="font-tt-norms w-full bg-transparent border-none outline-none text-lg lg:text-xl xl:text-2xl font-bold text-[#101828] min-w-0"
                   />
                   <div className="flex-shrink-0 flex items-center gap-2 bg-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-xl border border-[#D0D5DD] cursor-pointer hover:bg-gray-50 transition-colors whitespace-nowrap">
                     <img src="/assets/icons/flags/ng.svg" alt="NGN" className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 rounded-full object-cover" />
-                    <span className="text-base lg:text-xl font-bold text-[#344054]">NGN</span>
+                    <span className="font-tt-norms text-base lg:text-xl font-bold text-[#344054]">NGN</span>
                   </div>
                 </div>
               </div>
@@ -93,23 +93,23 @@ export default function ConvertCrypto() {
             {/* Fee Summary */}
             <div className="bg-[#F9F5FF] rounded-3xl p-6 lg:p-10 flex flex-col gap-6">
               <div className="flex justify-between items-center text-base lg:text-lg">
-                <span className="font-medium text-[#475467]">Connected bank account fee</span>
+                <span className="font-tt-norms font-medium text-[#475467]">Connected bank account fee</span>
                 <span className="font-poppins font-bold text-[#101828]">1,700 NGN</span>
               </div>
               <div className="flex justify-between items-center text-base lg:text-lg">
-                <span className="font-medium text-[#475467]">Our Fee</span>
+                <span className="font-tt-norms font-medium text-[#475467]">Our Fee</span>
                 <span className="font-poppins font-bold text-[#101828]">3,780 NGN</span>
               </div>
               <div className="w-full h-px bg-[#E4E7EC]" />
               <div className="flex justify-between items-center text-lg lg:text-xl">
-                <span className="font-bold text-[#101828]">Total included fees (0.55%)</span>
+                <span className="font-tt-norms font-bold text-[#101828]">Total included fees (0.55%)</span>
                 <span className="font-poppins font-bold text-[#101828]">5,480 NGN</span>
               </div>
             </div>
 
             {/* CTA Button */}
             <div className="flex justify-start lg:justify-start">
-              <Button size="lg" className="w-full sm:w-auto px-12 h-16 rounded-full text-lg font-bold shadow-lg shadow-purple-200">
+              <Button size="lg" className="font-tt-norms w-full sm:w-auto px-12 h-16 rounded-full text-lg font-bold shadow-lg shadow-purple-200">
                 Convert Now
               </Button>
             </div>

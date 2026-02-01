@@ -53,10 +53,10 @@ export default function AboutTeam() {
   return (
     <section className="w-full max-w-6xl mx-auto px-6 lg:px-12 mb-24 lg:mb-36">
       <div className="mb-14">
-        <p className="text-black text-[20.709px] font-medium leading-[155%] mb-5">
+        <p className="font-tt-norms text-black text-[20.709px] font-medium leading-[155%] mb-5">
           We have the right team...
         </p>
-        <h2 className="text-[40px] lg:text-[55.47px] font-extrabold leading-[109%]">
+        <h2 className="font-poppins text-[40px] lg:text-[55.47px] font-extrabold leading-[109%]">
           <span className="text-black">The right skills, the </span>
           <span className="text-nexar-purple">right people.</span>
         </h2>
@@ -128,10 +128,10 @@ function TeamCard({ name, role, image, badge }: TeamCardProps) {
       </div>
 
       <div className="flex flex-col items-start gap-3 w-full">
-        <h3 className="text-[#080325] text-lg font-semibold leading-[100%]">
+        <h3 className="font-poppins text-[#080325] text-lg font-semibold leading-[100%]">
           {name}
         </h3>
-        <p className="text-black text-base leading-[155%]">
+        <p className="font-tt-norms text-black text-base leading-[155%]">
           {role}
         </p>
       </div>

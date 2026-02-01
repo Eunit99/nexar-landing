@@ -27,11 +27,11 @@ export default function FAQ() {
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5 mb-16 text-center">
-          <p className="text-xl font-medium text-black leading-[155%]">
+          <p className="font-tt-norms text-xl font-medium text-black leading-[155%]">
             You have questions? We have answers
           </p>
-          <h2 className="text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[103%]">
-            Frequently asked <span className="text-nexar-purple">questions</span>
+          <h2 className="font-poppins text-4xl sm:text-5xl lg:text-[55px] font-extrabold leading-[103%]">
+            Frequently asked <span className="font-poppins text-nexar-purple">questions</span>
           </h2>
         </div>
 
@@ -48,7 +48,7 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                 className="w-full flex justify-between items-center gap-4"
               >
-                <h3 className="text-lg font-bold text-[#25272D] text-left">
+                <h3 className="font-poppins text-lg font-bold text-[#25272D] text-left">
                   {faq.question}
                 </h3>
                 <ChevronDown
@@ -58,7 +58,7 @@ export default function FAQ() {
               </button>
               {openIndex === index && (
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <p className="text-lg font-medium text-[#535860] leading-relaxed">
+                  <p className="font-tt-norms text-lg font-medium text-[#535860] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

@@ -20,20 +20,20 @@ export default function AboutCTA() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 pt-20 lg:pt-24">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
           <div className="flex flex-col gap-5 max-w-2xl">
-            <p className="text-white text-[20.709px] font-medium leading-[155%]">
+            <p className="font-tt-norms text-white text-[20.709px] font-medium leading-[155%]">
               Our goal is to keep you coming back...
             </p>
 
-            <h2 className="text-white text-[48px] lg:text-[71.552px] font-extrabold leading-[103%]">
+            <h2 className="font-poppins text-white text-[48px] lg:text-[71.552px] font-extrabold leading-[103%]">
               Join us at Nexar
             </h2>
 
-            <p className="text-[#EEEEEE] text-lg leading-[155%] mt-5 max-w-md">
+            <p className="font-tt-norms text-[#EEEEEE] text-lg leading-[155%] mt-5 max-w-md">
               At Nexar, we are dedicated to providing cutting-edge digital solutions that empower individuals and businesses to thrive in the online world.
             </p>
           </div>
 
-          <button className="px-14 py-3.5 border border-white rounded-full text-white font-medium text-lg leading-[155%] hover:bg-white hover:text-nexar-purple transition-colors whitespace-nowrap">
+          <button className="font-tt-norms px-14 py-3.5 border border-white rounded-full text-white font-medium text-lg leading-[155%] hover:bg-white hover:text-nexar-purple transition-colors whitespace-nowrap">
             Sign up
           </button>
         </div>
