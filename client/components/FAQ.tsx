@@ -39,11 +39,10 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`rounded-[30px] border transition-all ${
-                openIndex === index
+              className={`rounded-[30px] border transition-all ${openIndex === index
                   ? 'border-[#005CFF] bg-gray-50 p-8'
                   : 'border-nexar-purple bg-gray-50 p-8 lg:p-11'
-              }`}
+                }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
@@ -53,9 +52,8 @@ export default function FAQ() {
                   {faq.question}
                 </h3>
                 <ChevronDown
-                  className={`w-9 h-9 text-[#B2B7BA] flex-shrink-0 transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`w-9 h-9 text-[#B2B7BA] flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
               {openIndex === index && (
